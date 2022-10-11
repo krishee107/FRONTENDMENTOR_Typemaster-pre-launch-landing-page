@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700;900&display=swap');
+
+:root{
+    --color1:#F16718;
+    --color2:#FF9B62;
+    --color3:#162542;
+    --color4:#7B8BAD;
+    --color5:#E8EFF2;
+    --color6:#FFFFFF;
+
+    /*Typo*/
+    --ff: 'Barlow', sans-serif;
+}
+
+/* -- GENERAL -- */
+html, body{
+    margin: 0;
+    font-family: var(--ff);
+    line-height: 26px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--color4);
+}
+
+h1,h2,h3{
+    color:var(--color3);
+    text-transform: capitalize;
+    font-weight: 900;
+}
+h1{
+    font-size: 56px;
+    line-height: 56px;
+}h2{
+    font-size: 32px;
+    line-height: 36px;
+    
+}h3{
+    line-height: 28px;
+    font-size: 24px;
+}
+
+/* Buttons*/
+
+/* -- Header -- */
