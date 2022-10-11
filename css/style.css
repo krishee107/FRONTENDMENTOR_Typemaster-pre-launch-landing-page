@@ -15,6 +15,7 @@
 /* -- GENERAL -- */
 html, body{
     margin: 0;
+    width: 100vw;
     font-family: var(--ff);
     line-height: 26px;
     font-size: 16px;
@@ -39,6 +40,115 @@ h1{
     font-size: 24px;
 }
 
+
+main {
+    overflow: hidden;
+    padding: 24px;
+}
 /* Buttons*/
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+}
+.button {
+    border-radius: 8px;
+    width: 150px;
+    height: 48px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: var(--color3);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.whiteButton {
+    color: unset;
+}
+
+.orangeButton {
+    color: white;
+    background-color: var(--color1);
+}
+.grayButton {
+    background: #E8EFF2;
+}
+
 
 /* -- Header -- */
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Hero images */
+.hero_images img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hero_images {padding: 24px 0;}
+.hero_top {
+    border-radius: 24px;
+    overflow-x: hidden;
+    margin-right: -20px;
+    height: 331px;
+    width: 372px;
+}
+.hero_bottom {
+    display: flex;
+    padding: 24px;
+    gap: 24px;
+}.hero_bottom img {
+    max-height: 193px;
+    border-radius: 25px;
+}
+.hero_phone {
+    margin-left: -75px;
+    overflow: hidden;
+    background-color: var(--color1);
+    border-radius: 25px;
+}
+
+.hero_phone img {
+    opacity: 0.2;
+    width: 100%;
+    height: 100%;
+}
+
+/* Mechanical */
+.mechanical h2 {
+    text-align: center;
+    padding: 0 30px;
+}
+
+.mechanical p {
+    text-align: center;
+}
+
+/* Info boxes */
+.especificaciones {padding: 70px 0;}
+
+.info_boxes {text-align: center;}
+
+.info_box {padding: 15px 0;}
+
+.info_box h3 {width: 50%;margin: 0 auto;padding: 24px 0;}
+.info_box_img {
+    width: 65px;
+    height: 65px;
+    background-color: var(--color1);
+    margin: 24px auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 16px;
+}
+
+/* Footer */
+footer {text-align: center;}
+footer span {font-weight: bold;}
