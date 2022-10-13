@@ -86,25 +86,23 @@ header {
 }
 
 /* Hero images */
-.hero_images img {
-    max-width: 100%;
-    max-height: 100%;
+.hero_top_img img, .hero_images img {
+    width: 100%;
+    height: 100%;
+}
+.hero_top_img {
+    border-radius: 24px;
+    overflow-x: hidden;
+    margin-right: -30px;
 }
 
 .hero_images {padding: 24px 0;}
-.hero_top {
-    border-radius: 24px;
-    overflow-x: hidden;
-    margin-right: -20px;
-    height: 331px;
-    width: 372px;
-}
+
 .hero_bottom {
     display: flex;
     padding: 24px;
     gap: 24px;
 }.hero_bottom img {
-    max-height: 193px;
     border-radius: 25px;
 }
 .hero_phone {
@@ -119,7 +117,7 @@ header {
     width: 100%;
     height: 100%;
 }
-
+.hero_box_gray{display: none;}
 /* Mechanical */
 .mechanical h2 {
     text-align: center;
@@ -152,3 +150,109 @@ header {
 /* Footer */
 footer {text-align: center;}
 footer span {font-weight: bold;}
+
+/*Tablet*/
+@media (min-width:640px){
+    .hero_top_info {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        justify-content: center;
+    }
+    .hero_bottom {
+        justify-content: space-evenly;
+    }
+
+    .hero_bottom img {
+        max-height: 320px;
+    }
+    .hero_glass img {
+    }
+
+    .hero_phone {
+        margin: unset;
+    }
+    .mechanical {
+        display: flex;
+        align-items: center;
+    }
+    
+    .mechanical h2, .mechanical p {
+        text-align: left;
+    }
+    
+    .info_boxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: left;
+    }
+    
+    .info_box_img {
+        margin: unset;
+        margin-top: 24px;
+    }
+    
+    .info_box h3 {
+        margin: unset;
+    }
+    
+    .info_box p {
+        width: 80%;
+    }
+}
+
+@media (min-width:1023px) {
+    .hero_box_gray{
+        display: block;
+        
+        Width:255px;
+        Height:240px;
+        background-color: #E8EFF2;
+        border-radius: 20px;
+    }
+
+    .hero_top_info .hero_box_gray {
+        margin-right: -4%;
+    }
+    
+    .hero_images .hero_box_gray {
+        align-self: end;
+        margin-left: -150px;
+    }
+    .hero_images {
+        display: grid;
+        grid-template-columns: auto 2fr 1fr;
+        gap: 20px;
+    }
+    
+    .mechanical {
+        flex-direction: column;
+    }
+    
+    .hero_glass img {
+        height: 100%;
+        width: 100%;
+        max-height: unset;
+        max-width: unset;
+    }
+    
+    .hero_bottom img {
+    max-height: unset;
+    max-width: unset;
+    }
+    
+    .mechanical h2 {padding: unset;}
+    
+    .hero_bottom {
+        gap: unset;
+        padding: unset;
+        width: 100%;
+        gap: 20px;
+    }
+
+
+    .info_boxes {
+        display: flex;
+        gap: 50px;
+    }
+}
